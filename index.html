@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+<main>
+
+    <body onload="anonymousLogin() && firstStateFoodmenu()">
+
+        <script src="/__/firebase/9.6.6/firebase-app-compat.js"></script>
+        <script src="/__/firebase/9.6.6/firebase-auth-compat.js"></script>
+        <script src="/__/firebase/9.6.6/firebase-firestore-compat.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <script src="./scrips/reload.js"></script>
+        <script src="./scrips/firstStateFoodmenu.js"></script>
+        <script src="./scrips/lunchNotification.js"></script>
+        <script src="./scrips/onClickFoodButton.js"></script>
+
+
+        <h1>lunch menu</h1>
+        <!-- <button id="btn" onclick="location.href='Admin.html'">Login</button> -->
+        <a class="btn btn--yellow btn--cubic" onclick="doReloadNoCache()">更新</a>
+        <div id="classic">
+            <div class="food">
+                <div id="DailyLunch" class="food2" style="visibility: visible;">
+                    <img src="img/gyutan.jpg" alt="日替わり">
+                </div>
+                <h4>日替わり定食　800円</h4>
+            </div>
+
+            <div class="food">
+                <div id="FriedChicken" class="food2" style="visibility: visible;">
+                    <img src="img/karaage.jpg" alt="唐揚げ">
+                </div>
+                <h4>唐揚げ定食　800円</h4>
+            </div>
+
+            <div class="food">
+                <div id="Syouga" class="food2" style="visibility: visible;">
+                    <img src="img/syogayaki.jpg" alt="生姜焼き">
+                </div>
+                <h4>生姜焼き定食　800円</h4>
+            </div>
+
+            <div class="food">
+                <div id="Tonkatu" class="food2" style="visibility: visible;">
+                    <img src="img/tonkatsu.jpg" alt="とんかつ">
+                </div>
+                <h4>とんかつ定食　800円</h4>
+            </div>
+
+            <div class="food">
+                <div id="Hamburge" class="food2" style="visibility: visible;">
+                    <img src="img/humburge.jpg" alt="ハンバーグ">
+                </div>
+                <h4>ハンバーグ定食　800円</h4>
+            </div>
+
+            <div class="food">
+                <div id="Sashi" class="food2" style="visibility: visible;">
+                    <img src="img/sashimi.jpg" alt="刺身">
+                </div>
+                <h4>刺身定食　1000円</h4>
+            </div>
+        </div>
+    </body>
+</main>
+
+</html>
