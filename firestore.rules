@@ -5,8 +5,8 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /menu/{document=**}{
-      allow read: if request.auth != null && request.auth.uid != "EgHb57OmLRSHnsAkGYbpD9kkhT23";
-      allow read,write: if request.auth != null && request.auth.uid == "EgHb57OmLRSHnsAkGYbpD9kkhT23";
+      allow read: if request.auth != null && request.auth.uid != "xxx";
+      allow read,write: if request.auth != null && request.auth.uid == "xxx";
     }
   }
 }
